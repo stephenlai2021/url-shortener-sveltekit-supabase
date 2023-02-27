@@ -5,11 +5,13 @@
 <section class="h-screen grid place-items-center">
   <div class="max-w-3xl mx-auto text-center">
     <h1 class="heading text-5xl lg:text-6xl font-bold">
-      Make your links tiny and easy to share with tnyl
+      <!-- Make your links tiny and easy to share with tnyl -->
+      Shorten Your URLs Easily.
     </h1>
     <p class="text-lg w-10/12 md:w-2/3 mx-auto my-10">
-      Transform your long, cumbersome URLs into short and shareable links with
-      TinyLink
+      <!-- Transform your long, cumbersome URLs into short and shareable links with
+      TinyLink -->
+      QuickShort is the easiest way to shorten URLs and track analytics for your website.     
     </p>
     <a href="/dashboard" class="btn text-sm">Short Now</a>
   </div>

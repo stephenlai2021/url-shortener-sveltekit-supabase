@@ -18,14 +18,19 @@ Vercel - An advanced, powerful, well maintained hosting platform and has the qui
 
 ## Topics
 
-- Folder Structure
+### Folder Structure
 
-- Page Route
+### Components
 
-- Server Route (API Route)
+### Page Route
 
-- Authentification
+### Server Route (API Route)
 
+### Authentification
+
+### Data Structure
+
+[Data Structure]('https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/furnitures/armchair.png')
  
 ## Usage
 
@@ -43,6 +48,23 @@ PUBLIC_SUPABASE_URL = Your supabaseUrl
 ```
 
 Create a Supabase account
+
+Create two table, links and clicks
+- links property
+```
+long_url,
+short_key,
+count,
+created_at,
+user
+```
+- clicks property
+```
+link_id
+ip
+location
+user_agent
+```
 
 
 Run development server

@@ -58,7 +58,7 @@
         on:click={handleGithubLogin}
       >Continue with github</button>
 
-      <!-- <hr class="border border-white/10 my-5" /> -->
+      <hr class="border border-white/10 my-5" />
 
       <form method="POST" action={loginForm ? `?/login` : `?/register`}>
         <div class="form-group">
@@ -99,12 +99,11 @@
   }
 
   .btn-action {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
   }
 
   .btn-action2 {
-    /* border: 1px solid white; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
 </style>

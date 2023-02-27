@@ -17,24 +17,22 @@
   ];
 </script>
 
-<div
-  class="backdrop-blur-md border-b border-white/20 fixed top-0 left-0 right-0"
->
+<div class="backdrop-blur-md border-b border-white/20 fixed top-0 left-0 right-0 z-50"></div>
   <nav class="container mx-auto py-4 flex justify-between items-center">
     <a
       href="/"
       data-sveltekit-reload
       class="navbar-brand text-2xl font-bold text-white"
     >
-      Shrty Sveltekit
+      QuickShort
     </a>
 
     <ul class="flex items-center">
-      {#each links as link}
+      <!-- {#each links as link}
         <li class="mr-6 text-">
           <a href={`${link.url}`}>{link.title}</a>
         </li>
-      {/each}
+      {/each} -->
 
       {#if user}
         <li class="mr-6 text-">
