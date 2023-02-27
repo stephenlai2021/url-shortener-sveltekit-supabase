@@ -5,16 +5,20 @@ This url shortener application is a production ready app, it is a fullstack app 
 ## Stack
 
 <!-- Sveltekit - No.1 meta-framework and also the most advanced, smarties  -->
-Sveltekit - An advanced, smart meta-framework combining frontend and backend tech allowing user building a powerful fullstack web app in one single project rapidly and easily, it takes care of all the heavy-lifting job for us so we can only focus on the creactive parts 🥰
+Sveltekit
+- An advanced, smart meta-framework combining frontend and backend tech allowing user building a powerful fullstack web app in one single project rapidly and easily, it takes care of all the heavy-lifting job for us so we can only focus on the creactive parts 🥰
 
 <!-- Supabase - No.1 backend as service, it simplifies backend development  -->
-Supabase - A popular backend as a service, it simplifies backend development for us so that we can communicate to Supabase backend with easy to read and understand Javasccript APK pretty quick and easy. The CMS is very developer friendly 🥰
+Supabase 
+- A popular backend as a service, it simplifies backend development for us so that we can communicate to Supabase backend with easy to read and understand Javasccript APK pretty quick and easy. The CMS is very developer friendly 🥰
 
 <!-- TailwindCSS - No.1 CSS library, it makes styling so much easy and we  -->
-TailwindCSS - A cool and advanced css library makes styling so much easy and we never leave our html which is amazing 😘
+TailwindCSS 
+- A cool and advanced css library makes styling so much easy and we never leave our html which is amazing 😘
 
 <!-- Vercel - No.1 hosting platform, it is well maintained and has the  -->
-Vercel - An advanced, powerful, well maintained hosting platform and has the quickiest response time meaning when we hit the url the page is rendered in the browser almost in no time, this gives the best user experiences, pretty awesome 🥰
+Vercel 
+- An advanced, powerful, well maintained hosting platform and has the quickiest response time meaning when we hit the url the page is rendered in the browser almost in no time, this gives the best user experiences, pretty awesome 🥰
 
 ## Topics
 
@@ -30,27 +34,28 @@ Vercel - An advanced, powerful, well maintained hosting platform and has the qui
 
 ### Data Structure
 
-![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/furnitures/armchair.png)
+<!-- ![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/furnitures/armchair.png) -->
  
 ## Usage
 
-Fist download this repo and open it with VSCode
+1. Download this repo and open it with VSCode
 
-Open terminal and install all the dependencies with the command
+2. Open terminal and install all the dependencies with the command
 ```
 npm i
 ```
 
-Create an `.env` file in root directory and add the following codes
+3. Create an `.env` file in root directory and add the following codes
 ```
 PUBLIC_SUPABASE_ANON_KEY = Your supabaseKey
 PUBLIC_SUPABASE_URL = Your supabaseUrl
 ```
 
-Create a Supabase account
+4. Create a Supabase account
 
-Create two table, links and clicks
-- links property
+5. Create two tables, 'links' and 'clicks'
+
+6. Create the following column in links table
 ```
 long_url,
 short_key,
@@ -58,14 +63,14 @@ count,
 created_at,
 user
 ```
-- clicks property
+
+6. Create the following column in clicks table
 ```
-link_id
 ip
+link_id
 location
 user_agent
 ```
-
 
 Run development server
 ```
