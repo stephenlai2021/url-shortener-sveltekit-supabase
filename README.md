@@ -34,7 +34,7 @@ Vercel
 
 ### Data Structure
 
-<!-- ![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/furnitures/armchair.png) -->
+![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/projects/url_shortener/url-shortener-data-structure.png)
  
 ## Usage
 
