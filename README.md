@@ -22,15 +22,11 @@ Vercel
 
 ## Topics
 
-### Folder Structure
+### Folder Structure 
 
-![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/projects/url_shortener/url-shortener-folder-structure-2.png)
+- src directory
 
-Components folder 
-
-
-
-
+![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/projects/url_shortener/url-shortener-src-folder.png)
 
 ### Components
 
