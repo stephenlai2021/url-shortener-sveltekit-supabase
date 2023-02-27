@@ -30,7 +30,7 @@ Vercel - An advanced, powerful, well maintained hosting platform and has the qui
 
 ### Data Structure
 
-[Data Structure]('https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/furnitures/armchair.png')
+![Data Structure]('https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/furnitures/armchair.png')
  
 ## Usage
 
