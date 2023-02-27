@@ -1,13 +1,11 @@
 # URL Shortener App
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-This url shortener application is a production ready app, it is a fullstack app powered by Sveltekit and Supabase. It has a beautiful user interface and fully functional cRUD backend operations. Once user sign in the page redirects to dashboard where we can enter url in the input box to get the short url, it is customized to the authenticated user so we won't be able to see the data that does not belong to us.
+This url shortener application is a production ready app, it is a fullstack app powered by Sveltekit and Supabase. It has a robust authentication system, each page / api route is fully protected. It has a good-looking user interface and fully functional CRUD backend operations. Once user sign in the page redirects to dashboard where we can enter original url in the input box to get the shortened url, it is customized to the authenticated user so we won't be able to see the data that does not belong to us.
 
 ## Stack
 
 <!-- Sveltekit - No.1 meta-framework and also the most advanced, smarties  -->
-Sveltekit - An advanced, smart meta-framework combining frontend and backend tech allowing user building a powerful fullstack web app in one single project rapidly, it takes care of all the heavy-lifting job for us so we can only focus on the reactive parts 🥰
+Sveltekit - An advanced, smart meta-framework combining frontend and backend tech allowing user building a powerful fullstack web app in one single project rapidly and easily, it takes care of all the heavy-lifting job for us so we can only focus on the reactive parts 🥰
 
 <!-- Supabase - No.1 backend as service, it simplifies backend development  -->
 Supabase - A popular backend as a service, it simplifies backend development for us so that we can communicate with Supabase with easy to read and understand Javasccript APK pretty quick and easy. The CMS is very developer friendly 🥰
@@ -20,23 +18,15 @@ Vercel - it is well maintained hosting platform and has the quickiest response t
 
 ## Topics
 
- Introduction to SveltekitV1 and Supabase
- Project Setup
- Creating the UI
- Header
- Default Layout
- Home Page
- Auth Page
- Dashboard Page
- Github Authentication
- Supabase Row Level Security (RLS) Setup
- Creating Short Links
- Fetching Short Links
- Supabase Trigger & Functions (Click Count automation)
- Creating the Redirect Page
- Custom 404 Page
- Deploying to Netlify
+- Folder Structure
 
+- Page Route
+
+- Server Route (API Route)
+
+- Authentification
+
+ 
 ## Usage
 
 Fist download this repo and open it with VSCode
