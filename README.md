@@ -24,6 +24,14 @@ Vercel
 
 ### Folder Structure
 
+![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/projects/url_shortener/url-shortener-folder-structure.png)
+
+Components folder 
+
+
+
+
+
 ### Components
 
 ### Page Route
