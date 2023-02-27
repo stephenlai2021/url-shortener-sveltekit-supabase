@@ -5,16 +5,16 @@ This url shortener application is a production ready app, it is a fullstack app 
 ## Stack
 
 <!-- Sveltekit - No.1 meta-framework and also the most advanced, smarties  -->
-Sveltekit - An advanced, smart meta-framework combining frontend and backend tech allowing user building a powerful fullstack web app in one single project rapidly and easily, it takes care of all the heavy-lifting job for us so we can only focus on the reactive parts 🥰
+Sveltekit - An advanced, smart meta-framework combining frontend and backend tech allowing user building a powerful fullstack web app in one single project rapidly and easily, it takes care of all the heavy-lifting job for us so we can only focus on the creactive parts 🥰
 
 <!-- Supabase - No.1 backend as service, it simplifies backend development  -->
-Supabase - A popular backend as a service, it simplifies backend development for us so that we can communicate with Supabase with easy to read and understand Javasccript APK pretty quick and easy. The CMS is very developer friendly 🥰
+Supabase - A popular backend as a service, it simplifies backend development for us so that we can communicate to Supabase backend with easy to read and understand Javasccript APK pretty quick and easy. The CMS is very developer friendly 🥰
 
 <!-- TailwindCSS - No.1 CSS library, it makes styling so much easy and we  -->
 TailwindCSS - A cool and advanced css library makes styling so much easy and we never leave our html which is amazing 😘
 
 <!-- Vercel - No.1 hosting platform, it is well maintained and has the  -->
-Vercel - it is well maintained hosting platform and has the quickiest response time meaning when we hit the url the page is rendered in the browser almost in no time, this gives the best user experiences, pretty awesome 🥰
+Vercel - An advanced, powerful, well maintained hosting platform and has the quickiest response time meaning when we hit the url the page is rendered in the browser almost in no time, this gives the best user experiences, pretty awesome 🥰
 
 ## Topics
 
