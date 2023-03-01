@@ -48,11 +48,43 @@ This url shortener application is a production ready app, it is a fullstack app 
 
 ...
 
+---
+
 ### Theme Switcher
 
-We are gonna use `Daisy UI` built-in themes to quickly make this functionality work
+We are gonna use `Daisy UI` built-in themes to quickly create this functiona
 
-`Daisy UI` has 29 beautiful and prebuilt themes, we can switch page color such as background, text, button by change the theme name, to achieve this we apply Sveltekit advanced features...
+`Daisy UI` has 29 beautiful and prebuilt themes, and they are 
+```
+"light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"
+```
+
+Each theme contains 9 colors in terms of class name, and they are
+```
+"primary", "secondary", "accent", "neutral", "base-100", "info", "success", "warning", "error"
+```
+
+Let us take a look at an exmaple, suppose we want to change color of backround, navbar, btn when we switch theme, I want background of the page to be `base-100`, navbar to be `neutral` and button to be `primary`, 
+```
+<div id="container" class="bg-base-100">
+  <div id="navbar" class="bg-neutral">
+    <button class="bg-primary">Action</button>
+  </div>
+</body>
+```
+
+Once we switch theme the color will be adjusted to corresponging color based upon class name (base-100, neutral, primary), etc.
+
+We also have to add a `data-theme=<theme>` attribute within `<html>` tag in `app.html`, i.e.
+```
+app.html
+--------
+<html lang="en" data-theme="dark">
+...
+```
+then in our component we can apply a `<select>` and `<option>` element to select theme to change color of text, background, button, etc.
+
+---
 
 ### PWA (Progressive Web App)
 
@@ -64,18 +96,21 @@ Create a `manifest.json` file
 Create a `service worker` file
 - Follow the instructions in [Sveltekit Docs](https://kit.svelte.dev/docs/service-workers)
 
+---
+
 ### Checkout
 
 This app allows authenticated use to create 10 short links, meaning user with free tier has at most ten records in the database, if the number is exceeded user will be redirect to checkout page to proceed the payment, if user doesn't want to pay, then all he/she has to do is to maintain the number of link in dashboard within 10 by removing the unwanted item.
 
 Stripe is the chose payment tech because it is widely adopted and is secure.
 
+---
+
 ### Google Play Store 
 
 if a native app is preferred, user can download the app in the form of Android App from Play Store. 
 
 How to turn a web app into an Android app
--
 
 ---
 
