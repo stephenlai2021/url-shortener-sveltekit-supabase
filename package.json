@@ -20,6 +20,7 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/supabase-js": "^2.8.0",
+		"@sveltejs/adapter-node": "^1.2.0",
 		"@sveltejs/adapter-vercel": "^2.1.1",
 		"daisyui": "^2.51.2"
 	}

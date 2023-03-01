@@ -54,7 +54,7 @@ This url shortener application is a production ready app, it is a fullstack app 
 
 ### PWA (Progressive Web App)
 
-...
+- Service Worker
 
 ## Usage
 
