@@ -8,24 +8,24 @@
   //   created_at: new Date().toLocaleDateString(),
   // };
 
-  export let link
+  export let link;
 </script>
 
 <div
-  class="link card mb-5 flex justify-between gap-5 hover:border-white/30 transition-all duration-200"
+  class="backdrop-blur-lg border border- border-opacity-50 rounded-xl p-5 min-w-[350px] mb-5 flex justify-between gap-5 hover:border-white/30 transition-all duration-200"
 >
-  <div class="w-1/2">
+  <div class="w-1/2 link">
     <div class="text-xl">
       <a href="#">/{link.shortKey}</a>
     </div>
-    <div class="text-white/50 text-xs sm:text-base">
+    <div class="text-xs sm:text-base">
       {link.longUrl.slice(0, 20) + "..."}
     </div>
   </div>
   <div class="w-1/2 link-ation flex justify-end">
     <div class="link-stats flex flex-col items-end justify-center">
       <div class="flex items-end">
-        <span class="text-white leading-none text-sm sm:text-base">
+        <span class="leading-none text-sm sm:text-base">
           {link.total_clicks}
         </span>
         <svg
@@ -43,12 +43,16 @@
           />
         </svg>
       </div>
-      <div class="text-white/50">
+      <div>
         <span class="text-xs sm:text-sm">{link.created_at?.slice(0, 10)}</span>
       </div>
     </div>
-    <!-- <CopyBtn :data="config.public.appUrl + '/' + link.key" /> -->
-    <!-- <CopyBtn data={config.public.appUrl + '/' + link.key} /> -->
     <CopyBtn />
   </div>
 </div>
+
+<!-- <style>
+  a {
+    text-decoration: none;
+  }
+</style> -->

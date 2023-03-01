@@ -58,6 +58,7 @@
           </svg>
         {:else}
           Shorten
+          <!-- <span class="py-2 px-4 rounded-full">Shorten</span> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

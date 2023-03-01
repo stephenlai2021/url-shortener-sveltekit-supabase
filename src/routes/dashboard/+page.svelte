@@ -46,8 +46,7 @@
 </script>
 
 <section class="pt-28 container mx-auto">
-  <h1 class="text-2xl font-bold text-white">Dashboard</h1>
-  <!-- <LinkForm @shorten="handleRefresh" /> -->
+  <h1 class="text-2xl font-bold">Dashboard</h1>
   <LinkForm />
   <div class="links-wrapper mt-10">
     {#each loop as item}
