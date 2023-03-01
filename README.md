@@ -50,11 +50,17 @@ This url shortener application is a production ready app, it is a fullstack app 
 
 ### Theme Switcher
 
-...
+We are gonna use `Daisy UI` built-in themes to quickly make it happen
 
 ### PWA (Progressive Web App)
 
-- Service Worker
+In order to make our web app running offline, we have to make it a progressive, this requires a `manifest.json` and `service-worker.js` file to make it work
+
+Create a `manifest.json` file
+- Visit [SimiCart](https://www.simicart.com/manifest-generator.html/), and follow the step by step instructions to generate a `manifest.json` and corresponding icon files
+
+Create a `service worker` file
+- Follow the instructions in [Sveltekit Docs](https://kit.svelte.dev/docs/service-workers)
 
 ## Usage
 
