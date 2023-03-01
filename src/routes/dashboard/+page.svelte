@@ -1,6 +1,10 @@
 <script>
   import LinkForm from '$lib/components/LinkForm.svelte'
   import LinkCard from '$lib/components/LinkCard.svelte'
+  import { page } from '$app/stores';
+
+  console.log('url: ', $page.url.pathname)
+
 
   const loop = [
     {

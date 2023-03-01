@@ -5,32 +5,34 @@ This url shortener application is a production ready app, it is a fullstack app 
 ## Stack
 
 <!-- Sveltekit - No.1 meta-framework and also the most advanced, smarties  -->
-Sveltekit
+### Sveltekit
 - An advanced, smart meta-framework combining frontend and backend tech allowing user building a powerful fullstack web app in one single project rapidly and easily, it takes care of all the heavy-lifting job for us so we can only focus on the creactive parts 🥰
 
 <!-- Supabase - No.1 backend as service, it simplifies backend development  -->
-Supabase 
+### Supabase 
 - A popular backend as a service, it simplifies backend development for us so that we can communicate to Supabase backend with easy to read and understand Javasccript APK pretty quick and easy. The CMS is very developer friendly 🥰
 
 <!-- TailwindCSS - No.1 CSS library, it makes styling so much easy and we  -->
-TailwindCSS 
-- A cool and advanced css library makes styling so much easy and we never leave our html which is amazing 😘
+### DaisyUi
+- A cool and advanced css library on top of Tailwindcss, it makes styling so much easy and we never leave our html which is amazing 😘
 
 <!-- Vercel - No.1 hosting platform, it is well maintained and has the  -->
-Vercel 
+### Vercel 
 - An advanced, powerful, well maintained hosting platform and has the quickiest response time meaning when we hit the url the page is rendered in the browser almost in no time, this gives the best user experiences, pretty awesome 🥰
 
 ## Topics
 
 ### Folder Structure 
 
-- src directory
-
 ![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/projects/url_shortener/url-shortener-src-folder.png)
 
 ### Components
 
 ### Page Route
+
+- Home Page (Landing Page)
+- Login Page (Login/Signup)
+- Dashboard Page (User manage CRUD operations)
 
 ### Server Route (API Route)
 
@@ -39,7 +41,21 @@ Vercel
 ### Data Structure
 
 ![Data Structure](https://itzgmdgndusfvggjclwk.supabase.co/storage/v1/object/public/projects/url_shortener/url-shortener-data-structure.png)
- 
+
+## Features
+
+### Multilingual Suppoert
+
+...
+
+### Theme Switcher
+
+...
+
+### PWA (Progressive Web App)
+
+...
+
 ## Usage
 
 1. Download this repo and open it with VSCode
@@ -58,6 +74,10 @@ PUBLIC_SUPABASE_URL = Your supabaseUrl
 4. Create a Supabase account
 
 5. Create two tables, 'links' and 'clicks'
+
+- clicks table
+
+![clicks table]()
 
 6. Create the following column in links table
 ```

@@ -16,12 +16,6 @@
 >
   <div class="w-1/2">
     <div class="text-xl">
-      <!-- <NuxtLink
-          :to="{ name: 'dashboard-id', params: { id: link.key } }"
-          class="text-amber-500 font-bold"
-          >/{{ link.key }}</NuxtLink
-        > -->
-      <!-- <a href={`/${link.key}`}>{link.key}</a> -->
       <a href="#">/{link.shortKey}</a>
     </div>
     <div class="text-white/50 text-xs sm:text-base">
