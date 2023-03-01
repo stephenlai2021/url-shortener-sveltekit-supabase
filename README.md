@@ -50,7 +50,9 @@ This url shortener application is a production ready app, it is a fullstack app 
 
 ### Theme Switcher
 
-We are gonna use `Daisy UI` built-in themes to quickly make it happen
+We are gonna use `Daisy UI` built-in themes to quickly make this functionality work
+
+`Daisy UI` has 29 beautiful and prebuilt themes, we can switch page color such as background, text, button by change the theme name, to achieve this we apply Sveltekit advanced features...
 
 ### PWA (Progressive Web App)
 
@@ -64,7 +66,7 @@ Create a `service worker` file
 
 ### Checkout
 
-This app allows authenticated use to create 10 short links, meaning user with free tier has at most ten recorders in the database, if the number is exceeded user will be redirect to checkout page to handle the payment, if user doesn't want to pay, then he/she can maintain the unwanted item to make the database has less than or equal to ten records.
+This app allows authenticated use to create 10 short links, meaning user with free tier has at most ten records in the database, if the number is exceeded user will be redirect to checkout page to proceed the payment, if user doesn't want to pay, then all he/she has to do is to maintain the number of link in dashboard within 10 by removing the unwanted item.
 
 Stripe is the chose payment tech because it is widely adopted and is secure.
 
