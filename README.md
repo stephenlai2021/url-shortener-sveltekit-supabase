@@ -44,7 +44,7 @@ This url shortener application is a production ready app, it is a fullstack app 
 
 ## Features
 
-### Multilingual Suppoert
+### Multilingual 
 
 ...
 
@@ -61,6 +61,21 @@ Create a `manifest.json` file
 
 Create a `service worker` file
 - Follow the instructions in [Sveltekit Docs](https://kit.svelte.dev/docs/service-workers)
+
+### Checkout
+
+This app allows authenticated use to create 10 short links, meaning user with free tier has at most ten recorders in the database, if the number is exceeded user will be redirect to checkout page to handle the payment, if user doesn't want to pay, then he/she can maintain the unwanted item to make the database has less than or equal to ten records.
+
+Stripe is the chose payment tech because it is widely adopted and is secure.
+
+### Google Play Store 
+
+if a native app is preferred, user can download the app in the form of Android App from Play Store. 
+
+How to turn a web app into an Android app
+-
+
+---
 
 ## Usage
 
