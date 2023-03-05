@@ -1,10 +1,29 @@
  <script>
    import { t } from '$lib/i18n/translations';
+   import { onMount } from 'svelte'
+   import { mobile } from '$lib/stores'
 
    let isLoading = false
+  
+  onMount(() => {
+    if (window.innerWidth <= 400) $mobile = true;
+    if (window.innerWidth > 400) $mobile = false;
+    
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 400) $mobile = true;
+      if (window.innerWidth > 400) $mobile = false;
+    });
+  })
+
+  $: console.log('mobile: ', $mobile)
  </script>
  
- <form method="POST" action="" class="mt-10 card flex flex-wrap sm:flex-nowrap justify-between items-middle gap-5">
+ <form 
+   method="POST" 
+   action="" 
+   class="mt-10 flex flex-wrap sm:flex-nowrap justify-between items-middle gap-5"
+   class:card={ !$mobile }
+   >
  <!-- <form method="POST" action="" class="mt-10 flex flex-wrap sm:flex-nowrap justify-between items-middle gap-5"> -->
     <div class="form-group w-full sm:w-6/12">
       <label for="long_url" class="text- text-xs mb-1 block">{$t('common.long_url')}</label>
@@ -90,10 +109,5 @@
       .btn-submit-wrapper {
         justify-content: flex-start;
       }
-
-      /* .btn-submit,
-      input {
-        width: 90%;
-      } */
     }
   </style>

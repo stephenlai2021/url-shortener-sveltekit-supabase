@@ -93,7 +93,7 @@
         </li>
       {/if}
 
-      <div class="flex-none">
+      <div class="side-menu">
         <ul class="menu menu-horizontal px-1 z-50 flex items-center">
           <li class="icon-setting">
             <button>
@@ -104,7 +104,7 @@
             <button>
               <span class="">🎨{$t("common.theme")}</span>
             </button>
-            <ul class="p-2 bg-base-100 w- max-h-96 overflow-y-scroll">
+            <ul class="dropdown-menu p-2 bg-base-100 w- max-h-96 overflow-y-scroll">
               <form method="POST" use:enhance={submitUpdateTheme}>
                 {#each themes as theme}
                   <li>
@@ -146,7 +146,7 @@
                 <IconLang />
               </span>
             </button>
-            <ul class="p-1 bg-base-100 w- max-h-96 overflow-y-scroll">
+            <ul class="dropdown-menu p-1 bg-base-100 w- max-h-96 overflow-y-scroll">
               {#each langs as lang}
                 {#if lang === "English"}
                   <li>
@@ -179,10 +179,13 @@
                 />
               </span>
             </button>
-            <ul class="p-1 bg-base-100 w- max-h-96 overflow-y-scroll">
+            <ul class="dropdown-menu p-1 bg-base-100 w- max-h-96 overflow-y-scroll">
               {#each userMenu as menu}
                 <li>
-                  <button>{menu}</button>
+                  <button class="name-menu">
+                    <!-- <span class="menu-item">{menu}</span> -->
+                    {menu}
+                  </button>
                 </li>
               {/each}
             </ul>
@@ -194,6 +197,16 @@
 </div>
 
 <style>
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+  }
+
+  .side-menu {
+    position: relative;
+    right: -20px;
+  }
+
   .icon-setting {
     display: none;
   }
