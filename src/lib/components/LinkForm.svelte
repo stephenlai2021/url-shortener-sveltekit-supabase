@@ -1,15 +1,18 @@
  <script>
+   import { t } from '$lib/i18n/translations';
+
    let isLoading = false
  </script>
  
  <form method="POST" action="" class="mt-10 card flex flex-wrap sm:flex-nowrap justify-between items-middle gap-5">
+ <!-- <form method="POST" action="" class="mt-10 flex flex-wrap sm:flex-nowrap justify-between items-middle gap-5"> -->
     <div class="form-group w-full sm:w-6/12">
-      <label for="long_url" class="text-white/30 text-xs mb-1 block">Long URL</label>
+      <label for="long_url" class="text- text-xs mb-1 block">{$t('common.long_url')}</label>
       <input
         for="long_url"
         type="text"
         name="long_url"
-        placeholder="enter or paste long URL"
+        placeholder={$t('common.long_url_placeholder')}
       />
       <!-- {#if errors.long_url}
         <span class="text-xs py-1 text-red-500">
@@ -17,12 +20,12 @@
       {/if} -->
     </div>
     <div class="form-group w-full sm:w-4/12">
-      <label for="key" class="text-white/30 text-xs mb-1 block">Short Key</label>
+      <label for="key" class="text- text-xs mb-1 block">{$t('common.short_key')}</label>
       <input
         for="key"
         type="text"
         name="key"
-        placeholder="enter a key (optional)"
+        placeholder={$t('common.short_key_placeholder')}
         required
         min="6"
       />
@@ -30,10 +33,10 @@
         <span class="text-xs py-1 text-red-500">{errors.key}</span>
       {/if} -->
     </div>
-    <div class="w-full sm:w-2/12 flex justify-end self-end">
+    <div class="btn-submit-wrapper w-full sm:w-2/12 flex justify-end self-end">
       <button
         type="submit"
-        class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 w-full hover:shadow-xl transition-all duration-200"
+        class="btn-submit bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 w-full hover:shadow-xl transition-all duration-200"
       >
         {#if isLoading}
           <svg
@@ -57,7 +60,7 @@
             ></path>
           </svg>
         {:else}
-          Shorten
+          <span class="">{$t('common.shorten')}</span>          
           <!-- <span class="py-2 px-4 rounded-full">Shorten</span> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -77,3 +80,20 @@
       </button>
     </div>
   </form>
+
+  <style>
+    input {
+      width: 100%;
+    }
+
+    @media (max-width: 400px) {
+      .btn-submit-wrapper {
+        justify-content: flex-start;
+      }
+
+      /* .btn-submit,
+      input {
+        width: 90%;
+      } */
+    }
+  </style>

@@ -44,9 +44,15 @@ This url shortener application is a production ready app, it is a fullstack app 
 
 ## Features
 
-### Multilingual 
+### Multilingual (I18N)
 
-...
+QuickShort supports 4 languages, they are 
+```
+English,
+Japanese,
+Simplified Chinese,
+Traditional Chinese
+```
 
 ---
 

@@ -2,6 +2,7 @@
   import LinkForm from '$lib/components/LinkForm.svelte'
   import LinkCard from '$lib/components/LinkCard.svelte'
   import { page } from '$app/stores';
+  import { t } from '$lib/i18n/translations';
 
   console.log('url: ', $page.url.pathname)
 
@@ -45,8 +46,8 @@
   ]
 </script>
 
-<section class="pt-28 container mx-auto">
-  <h1 class="text-2xl font-bold">Dashboard</h1>
+<section class="pt-28 container mx-auto bg-base-100">
+  <h1 class="text-2xl font-bold">{$t('common.dashboard')}</h1>
   <LinkForm />
   <div class="links-wrapper mt-10">
     {#each loop as item}
