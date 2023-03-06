@@ -25,26 +25,10 @@
   ];
 
   const themes = [
-    "dark",
-    "cupcake",
-    "bumblebee",
-    "emerald",
-    "synthwave",
-    "retro",
-    "cyberpunk",
-    "valentine",
-    "halloween",
-    "garden",
-    "forest",
-    "pastel",
-    "wireframe",
-    "black",
-    "luxury",
-    "dracula",
-    "autumn",
-    "business",
-    "acid",
-    "lemonade",
+    "dark", "cupcake", "bumblebee", "emerald", "synthwave",
+    "retro", "cyberpunk", "valentine", "halloween", "garden",
+    "forest", "pastel", "wireframe", "black", "luxury",
+    "dracula", "autumn", "business", "acid", "lemonade",
     "night",
   ];
 
@@ -69,8 +53,7 @@
       data-sveltekit-reload
       class="navbar-brand text-2xl font-bold logo"
     >
-      <img class="logo-image" src={logo} alt="" width="30" />
-      <!-- <span class="title">QuickShort</span> -->
+      <!-- <img class="logo-image" src={logo} alt="" width="30" /> -->
       <span class="title">{$t("common.logo")}</span>
     </a>
 
@@ -183,7 +166,6 @@
               {#each userMenu as menu}
                 <li>
                   <button class="name-menu">
-                    <!-- <span class="menu-item">{menu}</span> -->
                     {menu}
                   </button>
                 </li>
@@ -214,23 +196,10 @@
   .logo {
     display: flex;
   }
-
-  .container {
-    /* border: 1px solid white; */
-    /* position: relative;
-    left: -15px; */
-    /* right: -15px; */
-  }
-
-  .icon-lang-wrapper {
-    cursor: pointer;
-  }
-
+  
+  .icon-lang-wrapper,
   .user-avatar-wrapper {
     cursor: pointer;
-    /* position: relative;
-    right: -15px; */
-    /* margin-left: 10px; */
   }
 
   .user-avatar {
@@ -238,8 +207,9 @@
   }
 
   .title {
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
+
   /* width */
   ::-webkit-scrollbar {
     width: 10px;

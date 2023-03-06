@@ -11,14 +11,31 @@ export const actions = {
       password: formData.get("password")
     };
   },
-  login: async ({ request }) => {    
-    const body = Object.fromEntries(await request.formData());
-    console.log('form data: ', { type: 'login', ...body })    
+  login: async ({ request, locals, url }) => {    
+    // const body = Object.fromEntries(await request.formData());
+    // console.log('form data: ', { type: 'login', ...body })    
 
-    return {
-      type: 'login',
-      email: body.email,
-      password: body.password
+    // return {
+    //   type: 'login',
+    //   email: body.email,
+    //   password: body.password
+    // }
+    
+    const provider = url.searchParams.get('provider')
+
+    if (provider) {
+      const { data, error } = await locals.supabase.auth.signInWithOAuth({
+        provider
+      })
     }
+
+    if (error) {
+      console.log(error)
+      return fail(400, {
+        message: 'Something  went wrong'
+      })
+    }
+
+    console.log('data: ', data)
   },
 }

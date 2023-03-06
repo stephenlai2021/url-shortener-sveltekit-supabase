@@ -53,10 +53,12 @@
           </svg>
         </div>
       </div>
-      <button
-        class="btn w-full mt-5 btn-github"
-        on:click={handleGithubLogin}
-      >Continue with github</button>
+      <form action="?/login" method="POST">
+        <button
+          class="btn w-full mt-5 btn-github"
+          formaction="?/login&provider=github"
+        >Continue with github</button>
+      </form>
 
       <hr class="border border-white/10 my-5" />
 
