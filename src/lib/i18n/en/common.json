@@ -30,5 +30,16 @@
   "long_url_placeholder": "enter or paste long URL",
   "short_key": "Short Key",
   "short_key_placeholder": "enter a key (optional",
-  "shorten": "Shorten"
+  "shorten": "Shorten",
+  "pricing": "pricing",
+  "features": "features",
+  "help": "help",
+  "btn-github": "continue with github",
+  "email": "Email",
+  "password": "Password",
+  "login": "login",
+  "login-hint": "Don't have an account? Register",
+  "register": "Register",
+  "register-hint": "Already have an account? Login",
+  "logout": "Logout"
 }

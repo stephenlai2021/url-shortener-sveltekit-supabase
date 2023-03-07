@@ -30,5 +30,16 @@
   "long_url_placeholder": "輸入或貼上長網址",
   "short_key": "短網址",
   "short_key_placeholder": "輸入短網址 (可選)",
-  "shorten": "快修"
+  "shorten": "快修",
+  "pricing": "方案",
+  "features": "特點",
+  "help": "幫助",
+  "btn-github": "繼續使用 Github",
+  "email": "電子郵件",
+  "password": "密碼",
+  "login": "登入",
+  "login-hint": "沒有帳戶? 註冊",
+  "register": "註冊",
+  "register-hint": "已經有了一個帳戶? 登錄",
+  "logout": "登出"
 }

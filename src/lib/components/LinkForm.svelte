@@ -4,14 +4,17 @@
    import { mobile } from '$lib/stores'
 
    let isLoading = false
+
+   const getRWD = () => {
+     if (window.innerWidth <= 420) $mobile = true;
+     if (window.innerWidth > 420) $mobile = false;
+   }
   
   onMount(() => {
-    if (window.innerWidth <= 400) $mobile = true;
-    if (window.innerWidth > 400) $mobile = false;
+    getRWD()
     
     window.addEventListener("resize", () => {
-      if (window.innerWidth <= 400) $mobile = true;
-      if (window.innerWidth > 400) $mobile = false;
+      getRWD()
     });
   })
 

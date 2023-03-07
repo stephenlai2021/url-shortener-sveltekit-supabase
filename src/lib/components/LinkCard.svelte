@@ -11,8 +11,9 @@
   export let link;
 </script>
 
+<!-- class="backdrop-blur-lg border border- border-opacity-50 rounded-xl p-5 min-w-[300px] mb-5 flex justify-between gap-5 hover:border-white/30 transition-all duration-200" -->
 <div
-  class="backdrop-blur-lg border border- border-opacity-50 rounded-xl p-5 min-w-[300px] mb-5 flex justify-between gap-5 hover:border-white/30 transition-all duration-200"
+  class="backdrop-blur-lg border border- border-opacity-50 rounded-xl p-5 min-w- mb-5 flex justify-between gap-5 hover:border-white/30 transition-all duration-200"
 >
   <div class="w-1/2 link">
     <div class="text-xl">

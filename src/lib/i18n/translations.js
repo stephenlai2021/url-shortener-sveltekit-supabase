@@ -5,6 +5,7 @@ export const config = {
   i18n: {
     en: { lang },
     zhTW: { lang },
+    ja: { lang }
   },
   loaders: [
     {

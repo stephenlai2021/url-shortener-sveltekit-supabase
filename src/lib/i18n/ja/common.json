@@ -30,5 +30,16 @@
   "long_url_placeholder": "長いURLを入力または貼り付ける",
   "short_key": "ショートキー",
   "short_key_placeholder": "キーを入力する（省略可）",
-  "shorten": "縮める"
+  "shorten": "縮める",
+  "pricing": "価格設定",
+  "features": "顔立ち",
+  "help": "手つだい",
+  "btn-github": "Github に続ける",
+  "email": "メール",
+  "password": "暗号",
+  "login": "ログイン",
+  "login-hint": "アカウントをお持ちでない方はこちら 登録する",
+  "register": "レジスタ",
+  "register-hint": "すでにアカウントをお持ちの方 ログイン",
+  "logout": "ログアウト"
 }
