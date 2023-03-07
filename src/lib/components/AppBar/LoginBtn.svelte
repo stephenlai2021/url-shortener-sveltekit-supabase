@@ -9,11 +9,3 @@
     </button>
   </a>
 </li>
-
-<style>
-  @media (max-width: 837px) {
-    .btn-login {
-      display: none;
-    }
-  }
-</style>

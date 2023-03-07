@@ -4,13 +4,13 @@
   const userMenu = ["Jeniffer Huang", "Logout"];
 </script>
 
-<li class="user-avatar-wrapper">
+<li class="user-avatar-wrapper cursor-pointer">
   <button>
     <span>
-      <img src={userAvatar} alt="" width="35" height="35" class="user-avatar" />
+      <img src={userAvatar} alt="" width="35" height="35" class="user-avatar rounded-full" />
     </span>
   </button>
-  <ul class="dropdown-menu p-1 bg-base-100 border">
+  <ul class="dropdown-menu absolute right-0 p-1 bg-base-100 border">
     <!-- {#each userMenu as menu} -->
     <!-- <li>
                     <button class="name-menu">
@@ -25,24 +25,3 @@
     </li>
   </ul>
 </li>
-
-<style>
-  .dropdown-menu {
-    position: absolute;
-    right: 0;
-  }
-
-  .user-avatar-wrapper {
-    cursor: pointer;
-  }
-
-  .user-avatar {
-    border-radius: 50%;
-  }
-
-   /* @media (max-width: 680px) {
-     .user-avatar-wrapper  {
-       right: -10px;
-     }
-   } */
-</style>

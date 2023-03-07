@@ -4,7 +4,7 @@
   import logo from "$lib/assets/images/logo-192x192.png";
 </script>
 
-<a href="/" data-sveltekit-reload class="logo navbar-brand text-2xl font-bold">
+<a href="/" data-sveltekit-reload class="flex relative navbar-brand text-2xl font-bold">
   <img class="logo-image" src={logo} alt="" width="28" height="28" />
   <span
     class="title"
@@ -17,12 +17,6 @@
 </a>
 
 <style>
-  .logo {
-    display: flex;
-    position: relative;
-    /* border: 1px solid; */
-  }
-
   .title {
     margin-left: 10px;
     width: 192px;
@@ -33,12 +27,6 @@
       left: -13px;
     }
   }
-
-  /* @media (max-width: 560px) {
-    .title {
-      display: none;
-    }
-  } */
 
   @media (max-width: 480px) {
     .title {

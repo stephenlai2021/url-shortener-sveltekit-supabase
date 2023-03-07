@@ -35,11 +35,11 @@
   };
 </script>
 
-<li class="theme-wrapper">
+<li class="relative cursor-pointer">
   <button>
     <span class="">{$t("common.theme")}🎨</span>
   </button>
-  <ul class="dropdown-menu p-2 bg-base-100 border max-h-96 overflow-y-scroll">
+  <ul class="absolute right-0 p-2 bg-base-100 border max-h-96 overflow-y-scroll">
     <form method="POST" use:enhance={submitUpdateTheme}>
       {#each themes as theme}
         <li>
@@ -76,16 +76,6 @@
 </li>
 
 <style>
-  .theme-wrapper {
-    position: relative;
-    cursor: pointer;
-  }
-
-  .dropdown-menu {
-    position: absolute;
-    right: 0;
-  }
-
   /* width */
   ::-webkit-scrollbar {
     width: 10px;
@@ -107,10 +97,4 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-
-  /* @media (max-width: 540px) {
-    .theme-wrapper {
-      display: none;
-    }
-  } */
 </style>

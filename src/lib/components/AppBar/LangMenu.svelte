@@ -5,13 +5,13 @@
   const langs = ["English", "日本語", "簡體中文", "繁體中文"];
 </script>
 
-<li class="icon-lang-wrapper">
+<li class="relative cursor-pointer">
   <button class="btn-lang">
     <span class="py- px-2">
       <IconLang />
     </span>
   </button>
-  <ul class="dropdown-menu p-1 bg-base-100 border">
+  <ul class="absolute right-0 p-1 bg-base-100 border">
     {#each langs as lang}
       {#if lang === "English"}
         <li>
@@ -31,15 +31,3 @@
     {/each}
   </ul>
 </li>
-
-<style>
-  .dropdown-menu {
-    position: absolute;
-    right: 0;
-  }
-
-  .icon-lang-wrapper {
-    position: relative;
-    cursor: pointer;
-  }
-</style>

@@ -19,7 +19,7 @@
 </script>
 
 <ul
-  class="middle-menu flex items-center justify-between"
+  class="middle-menu relative flex-nowrap flex items-center justify-between"
   style:left={$page.url.pathname === "/login" ||
   $page.url.pathname === "/register"
     ? "-30px"
@@ -41,11 +41,6 @@
 </ul>
 
 <style>
-  .middle-menu {
-    position: relative;
-    flex-wrap: nowrap;
-  }
-
   @media (max-width: 837px) {
     .middle-menu {
       display: none;
